@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:visibility="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>DarkChroma</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
               integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
               crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../css/options_page_style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="../script/jquery-min.js"></script>
-        <script src="../script/content.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/options_page.css">
+        <link rel="stylesheet" type="text/css" href="../css/popup.css">
     </head>
     <body>
         <div class="container">
             <h2 id="title">Settings</h2>
-            <br>
+            <hr>
             <div>
+                <p>Theme:</p>
+                <div class="row">
+                    <div class="radio-btn" id="onBtn">
+                        <img src="../images/whiteTick.png" class="tick" id="on" style="display: none">
+                    </div>
+                    <div class="radio-btn" id="offBtn">
+                        <img src="../images/blackTick.png" class="tick" id="off">
+                    </div>
+                </div>
+                <br>
                 <p>Exclude sites:</p>
-                <textarea id="excludeInput" cols="60" rows="5"
-                          placeholder="Enter name of the site that you want to exclude, separated by comma. Append * before or after to create a regex. Example: facebook*, *google*. This means anything that starts with 'facebook', and anything that includes 'google'."></textarea>
+                <textarea id="excludeInput"
+                          placeholder="Enter name of the site that you want to exclude, separated by comma. Example: facebook, google."></textarea>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="updateExcludeButton">Submit</button>
+            <br>
+            <br>
+            <div class="alert alert-success" id="submitAlert">
+                Successfully update new list!
+            </div>
         </div>
+
+        <script src="../script/jquery-min.js"></script>
+        <script src="../script/content.js"></script>
+        <script src="../script/popup.js"></script>
     </body>
 </html>

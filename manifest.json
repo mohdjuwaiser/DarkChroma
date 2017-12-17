@@ -4,24 +4,27 @@
     "version": "1.0",
     "description": "Provide dark background with light text for Chrome",
     "icons": {
-        "128": "images/png/DarkChroma128.png",
-        "48": "images/png/DarkChroma48.png",
-        "16": "images/png/DarkChroma16.png"
+        "128": "images/logo/png/DarkChroma128.png",
+        "48": "images/logo/png/DarkChroma48.png",
+        "16": "images/logo/png/DarkChroma16.png"
     },
     "browser_action": {
         "default_title": "DarkChroma",
-        "default_icon": "images/png/DarkChroma16.png"
+        "default_icon": "images/logo/png/DarkChroma16.png",
+        "default_popup": "html/popup.html"
     },
     "options_page": "html/option.html",
     "content_scripts": [{
         "css": ["css/style.css"],
-        "js": ["script/content.js"],
         "matches": ["http://*/*", "https://*/*"],
         "exclude_globs": [
             "*facebook*", "*youtube*", "*github*",
             "*stackoverflow*", "*stackexchange*",
-            "*getbootstrap*", "getbootstrap*",
-            "*w3schools*", "*outlook*", "*mail.google*"
+            "*bootstrap*", "*udemy*", "*w3school*",
+            "*outlook*", "*mail.google*"
         ]
-    }]
+    }],
+    "permissions": [
+        "storage"
+    ]
 }

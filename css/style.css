@@ -3,6 +3,14 @@
     color: white !important;
 }
 
+textarea {
+    background-color: #454545 !important;
+}
+
+select:active, select:hover {
+    outline-color: #333333 !important;
+}
+
 a {
     color: #81b8ed !important;
 }
@@ -19,7 +27,7 @@ input::placeholder {
     color: white !important;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, *.text {
     color: lightgray !important;
 }
 
