@@ -1,0 +1,24 @@
+* {
+    background-color: #222222 !important;
+    color: white !important;
+}
+
+a {
+    color: #81b8ed !important;
+}
+
+a:visited {
+    color: #2345c4 !important;
+}
+
+/*input[type="text"], textarea {*/
+    /*background-color : darkgray !important;*/
+/*}*/
+
+input::placeholder {
+    color: white !important;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: lightgray !important;
+}

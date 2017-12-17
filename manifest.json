@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "DarkChroma",
+    "version": "1.0",
+    "description": "Provide dark background with light text for Chrome",
+    "icons": {
+        "128": "images/png/DarkChroma128.png",
+        "48": "images/png/DarkChroma48.png",
+        "16": "images/png/DarkChroma16.png"
+    },
+    "browser_action": {
+        "default_icon": "images/png/DarkChroma16.png",
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [{
+        "css": ["css/style.css"],
+        "js": ["script/content.js"],
+        "matches": ["http://*/*", "https://*/*"],
+        "exclude_globs": [
+            "*facebook*", "*youtube*", "*github*",
+            "*stackoverflow*", "*stackexchange*"
+        ],
+        "exclude_matches": ["https://getbootstrap.com/*", "https://www.w3schools.com/*"]
+    }]
+}
