@@ -9,17 +9,19 @@
         "16": "images/png/DarkChroma16.png"
     },
     "browser_action": {
-        "default_icon": "images/png/DarkChroma16.png",
-        "default_popup": "html/popup.html"
+        "default_title": "DarkChroma",
+        "default_icon": "images/png/DarkChroma16.png"
     },
+    "options_page": "html/option.html",
     "content_scripts": [{
         "css": ["css/style.css"],
         "js": ["script/content.js"],
         "matches": ["http://*/*", "https://*/*"],
         "exclude_globs": [
             "*facebook*", "*youtube*", "*github*",
-            "*stackoverflow*", "*stackexchange*"
-        ],
-        "exclude_matches": ["https://getbootstrap.com/*", "https://www.w3schools.com/*"]
+            "*stackoverflow*", "*stackexchange*",
+            "*getbootstrap*", "getbootstrap*",
+            "*w3schools*", "*outlook*", "*mail.google*"
+        ]
     }]
 }
