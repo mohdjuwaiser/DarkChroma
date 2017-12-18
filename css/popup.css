@@ -39,3 +39,11 @@ hr {
     width: 45px;
     height: 45px;
 }
+
+#on {
+    display: block;
+}
+
+#off {
+    display: none;
+}
