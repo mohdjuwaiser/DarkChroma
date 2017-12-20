@@ -1,0 +1,14 @@
+/* other extensions' popup is unchanged */
+div[role=alertdialog], div[role=alertdialog] div {
+    background-color: white !important;
+}
+
+/* google search list drop-down */
+div[role=listbox], div[role=option], div[role=option] div {
+    background-color: #2D2D2D !important;
+}
+
+/* google search list drop-down on select */
+div[role=option] div:hover {
+    background-color: #121212 !important;
+}

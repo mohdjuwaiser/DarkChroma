@@ -1,13 +1,24 @@
 $(function () {
-    init();
+    chrome.storage.sync.get("status", function(stat) {
+        if(stat.status === "on") {
+            $("#on").show();
+            $("#off").hide();
+        }
+        else {
+            $("#on").hide();
+            $("#off").show();
+        }
+    });
 
     $("#onBtn").click(function () {
         if(!$("#on").is(":visible")) {
             $("#on").show();
             $("#off").hide();
         }
-
-        chrome.storage.sync.set({"status": "on"});
+        var stat = "on";
+        chrome.storage.sync.set({"status": stat}, function () {
+            console.log(stat);
+        });
     });
 
     $("#offBtn").click(function () {
@@ -15,20 +26,9 @@ $(function () {
             $("#off").show();
             $("#on").hide();
         }
-
-        chrome.storage.sync.set({"status": "on"});
+        var stat = "off";
+        chrome.storage.sync.set({"status": stat}, function () {
+            console.log(stat)
+        });
     });
 });
-
-function init() {
-   chrome.storage.sync.get("status", function(app) {
-       if(app.status === "on") {
-           $("#on".attr("display", "block"));
-           $("#off".attr("display", "none"));
-       }
-       else {
-           $("#on".attr("display", "none"));
-           $("#off".attr("display", "block"));
-       }
-   });
-}

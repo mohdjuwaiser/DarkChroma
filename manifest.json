@@ -3,6 +3,8 @@
     "name": "DarkChroma",
     "version": "1.0",
     "description": "Provide dark background with light text for Chrome",
+    "homepage_url": "https://github.com/baonguyen96/DarkChroma",
+    "offline_enabled": true,
     "icons": {
         "128": "images/logo/png/DarkChroma128.png",
         "48": "images/logo/png/DarkChroma48.png",
@@ -14,17 +16,39 @@
         "default_popup": "html/popup.html"
     },
     "options_page": "html/option.html",
-    "content_scripts": [{
-        "css": ["css/style.css"],
-        "matches": ["http://*/*", "https://*/*"],
-        "exclude_globs": [
-            "*facebook*", "*youtube*", "*github*",
-            "*stackoverflow*", "*stackexchange*",
-            "*bootstrap*", "*udemy*", "*w3school*",
-            "*outlook*", "*mail.google*"
-        ]
-    }],
+    "content_scripts": [
+        {
+            "css": [
+                "css/default_style.css",
+                "css/specials/google.css"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "exclude_globs": [
+                "*facebook*",
+                "*youtube*",
+                "*github*",
+                "*stackoverflow*",
+                "*stackexchange*",
+                "*bootstrap*",
+                "*udemy*",
+                "*w3school*",
+                "*outlook*",
+                "*mail.google*"
+            ],
+            "js": [
+                "script/options.js",
+                "script/jquery-min.js"
+            ]
+        }
+    ],
     "permissions": [
         "storage"
+    ],
+    "web_accessible_resources": [
+        "css/default_style.css",
+        "css/customized_style.css"
     ]
 }
