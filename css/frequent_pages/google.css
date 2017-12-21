@@ -1,0 +1,101 @@
+/* other extensions' popup is unchanged */
+div[role=alertdialog], div[role=alertdialog] div {
+    background-color: white !important;
+}
+
+/*********** GOOGLE ***********/
+
+span._xdb a.fl {
+    color: #81b8ed !important;
+}
+
+span._xdb a.fl:visited {
+    color: #2345c4 !important;
+}
+
+/* search bar */
+.sbibtd, .sbibtd * {
+    background-color: #454545 !important;
+}
+
+/* google search list drop-down */
+.sbdd_b, .sbdd_b * {
+    background-color: #393939 !important;
+}
+
+/* google search list drop-down on select */
+.sbsb_c.gsfs.sbsb_d, .sbsb_c.gsfs.sbsb_d * {
+    background-color: #121212 !important;
+}
+
+/* "people also ask" arrow */
+._Zgf {
+    background-color: #454545 !important;
+}
+
+/* google apps title box, bell notification */
+.gb_b.gb_cc, .gb_Nc.gb_Oc.gb_cc {
+    background-color: #454545 !important;
+}
+
+/* google apps drop down background */
+.gb_ia.gb_ba, .gb_ia.gb_ca, .gb_Z, .gb_Z *, .gb_ja.gb_Rf, .gb_ka.gb_Mf, .gb_ga.gb_fa.gb_za.gb_g.gb_ha.gb_ma {
+    background-color: #393939 !important;
+}
+
+/* "even more from google", "more" */
+a.gb_ka.gb_Mf, a.gb_ja.gb_Rf {
+    color: white !important;
+}
+
+/* google apps name */
+span.gb_3 {
+    color: white !important;
+}
+
+/* url link */
+cite._Rm {
+    color: darkgreen !important;
+}
+
+/*********** GOOGLE SUPPORT ***********/
+
+/* google apps */
+.gb_ga.gb_fa.gb_za.gb_g.gb_ha, .gb_ga.gb_fa.gb_za.gb_g.gb_ha * {
+    background-color: #393939 !important;
+}
+
+/* search bar */
+.gb_He, .gb_He * {
+    background-color: #393939 !important;
+}
+
+/* search result drop down on select */
+.sbsb_c.sbsb_d, .sbsb_c.sbsb_d * {
+    background-color: #121212 !important;
+}
+
+/* side bar */
+.gb_de, .gb_mc {
+    background-color: #2B2B2B !important;
+}
+
+/* side bar on support.google.com on select */
+.gb_qc.gb_wc:hover, .gb_qc.gb_wc:hover * {
+    background-color: #121212 !important;
+}
+
+button.show-all::after, button.show-all svg {
+    background-color: #2B2B2B !important;
+}
+
+/*********** NOT WORKING YET ***********/
+
+img#hplogo {
+    background-image: url("http://diylogodesigns.com/blog/wp-content/uploads/2016/04/new-google-logo-png.png") !important;
+}
+
+/* "i'm feeling lucky" */
+.jsb center input[type=submit] {
+    background-color: #454545 !important;
+}

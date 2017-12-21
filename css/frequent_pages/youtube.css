@@ -1,0 +1,33 @@
+/* search button, upload button, notification button, close notification button */
+.yt-uix-button-content, .yt-uix-button-icon.yt-uix-button-icon-material-upload.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-bell.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite {
+    background-color: transparent !important;
+}
+
+* * {
+    background-color: transparent !important;
+}
+
+/* top bars */
+#yt-masthead-container.clearfix.yt-base-gutter, #appbar-nav.appbar-content-hidable {
+    background-color: #2B2B2B !important;
+}
+
+/* search result drop down */
+.gssb_e {
+    background-color: #393939 !important;
+}
+
+/* search result drop down select */
+.gssb_i, .gssb_i * {
+    background-color: #121212 !important;
+}
+
+/* side bar under hamburger icon */
+#appbar-guide-menu, .guide-toplevel, .guide-toplevel * {
+    background-color: #2B2B2B !important;
+}
+
+/* side bar highlight on selection */
+a.guide-item.yt-uix-sessionlink.yt-valign.spf-link:hover {
+    background-color: #121212 !important;
+}

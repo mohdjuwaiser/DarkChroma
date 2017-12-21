@@ -6,13 +6,13 @@
     "homepage_url": "https://github.com/baonguyen96/DarkChroma",
     "offline_enabled": true,
     "icons": {
-        "128": "images/logo/png/DarkChroma128.png",
-        "48": "images/logo/png/DarkChroma48.png",
-        "16": "images/logo/png/DarkChroma16.png"
+        "128": "assets/images/logo/png/DarkChroma128.png",
+        "48": "assets/images/logo/png/DarkChroma48.png",
+        "16": "assets/images/logo/png/DarkChroma16.png"
     },
     "browser_action": {
         "default_title": "DarkChroma",
-        "default_icon": "images/logo/png/DarkChroma16.png",
+        "default_icon": "assets/images/logo/png/DarkChroma16.png",
         "default_popup": "html/popup.html"
     },
     "options_page": "html/option.html",
@@ -20,15 +20,16 @@
         {
             "css": [
                 "css/default_style.css",
-                "css/specials/google.css"
+                "css/frequent_pages/google.css",
+                "css/frequent_pages/youtube.css",
+                "css/frequent_pages/wikipedia.css"
             ],
             "matches": [
                 "http://*/*",
                 "https://*/*"
             ],
             "exclude_globs": [
-                "*facebook*",
-                "*youtube*",
+//                "*facebook*",
                 "*github*",
                 "*stackoverflow*",
                 "*stackexchange*",
@@ -39,8 +40,10 @@
                 "*mail.google*"
             ],
             "js": [
-                "script/options.js",
-                "script/jquery-min.js"
+                "script/jquery-min.js",
+                "script/frequent_pages/google.js",
+                "script/frequent_pages/youtube.js",
+                "script/options.js"
             ]
         }
     ],

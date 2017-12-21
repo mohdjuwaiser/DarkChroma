@@ -41,9 +41,6 @@ function getArrayOfSites(sites) {
  */
 function updatePageStyle(excludedSites) {
     var url = window.location.href;
-
-    alert(url);
-
     for(var site in excludedSites) {
         if(url.contains(site)) {
             alert("match");
