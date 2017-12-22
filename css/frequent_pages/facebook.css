@@ -1,0 +1,14 @@
+/* hover notification */
+._33c.jewelItemNew:hover * {
+    background-color: #121212 !important;
+}
+
+/* cover photo */
+.coverBorder {
+    background-color: transparent !important;
+}
+
+/* update info + view activity log */
+.actions._70j {
+    background-color: transparent !important;
+}

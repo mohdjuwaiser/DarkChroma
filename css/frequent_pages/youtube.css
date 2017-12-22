@@ -1,15 +1,21 @@
+body, body * {
+    background-color: #2B2B2B !important;
+}
+
 /* search button, upload button, notification button, close notification button */
 .yt-uix-button-content, .yt-uix-button-icon.yt-uix-button-icon-material-upload.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-bell.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite {
     background-color: transparent !important;
 }
 
-* * {
-    background-color: transparent !important;
-}
+/* notification background */
+/*.yt-uix-clickcard-card-content, .yt-uix-clickcard-card-content * {*/
+    /*background-color: #121212 !important;*/
+/*}*/
 
 /* top bars */
 #yt-masthead-container.clearfix.yt-base-gutter, #appbar-nav.appbar-content-hidable {
     background-color: #2B2B2B !important;
+    opacity: unset !important;
 }
 
 /* search result drop down */
@@ -28,6 +34,75 @@
 }
 
 /* side bar highlight on selection */
-a.guide-item.yt-uix-sessionlink.yt-valign.spf-link:hover {
+.guide-item.yt-uix-sessionlink.yt-valign.spf-link:hover {
     background-color: #121212 !important;
+}
+
+/* video group background */
+.feed-item-container.browse-list-item-container.yt-section-hover-container.compact-shelf.shelf-item.branded-page-box.clearfix:hover {
+    background-color: #2B2B2B !important;
+}
+
+/* video title background */
+ .yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link, .yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link *,  .yt-lockup-byline.yt-ui-ellipsis.yt-ui-ellipsis-2,  .yt-lockup-byline.yt-ui-ellipsis.yt-ui-ellipsis-2 * {
+    background-color: #2B2B2B !important;
+}
+
+/* title and channel text */
+a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link, a.yt-uix-sessionlink.spf-link {
+    color: #81b8ed !important;
+}
+
+/* title and channel text visited */
+a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-sessionlink.spf-link:visited {
+    color: #2345c4 !important;
+}
+
+/* video direct link */
+.yt-uix-redirect-link, .yt-uix-redirect-link * {
+    color: darkgreen !important;
+}
+
+/* playlist thumbnail */
+.yt-pl-thumb-overlay, .yt-pl-thumb-overlay-content, .yt-pl-thumb-overlay-content *, .yt-lockup-thumbnail.yt-pl-thumb * {
+    background-color: #161616 !important;
+}
+
+/* playlist next button*/
+.yt-uix-shelfslider-next-arrow.yt-uix-tooltip.yt-sprite {
+    background-color: transparent !important;
+}
+
+/* footer */
+#footer-container.yt-base-gutter.force-layer {
+    background-color: #2B2B2B !important;
+}
+
+/* accounts drop down */
+.yt-masthead-account-picker-option.yt-masthead-account-picker-user-option, .yt-masthead-account-picker.yt-uix-clickcard-card-content, .yt-masthead-account-picker.yt-uix-clickcard-card-content * {
+    background-color: #1b1b1b !important;
+}
+
+/* accounts drop down on select */
+.yt-masthead-account-picker-option.yt-masthead-account-picker-user-option:hover * {
+    background-color: #3e3e3e !important;
+}
+
+/* accounts drop down buttons not working */
+.yt-uix-button-content, .yt-uix-button-content * {
+    background: transparent !important;
+}
+
+/* comment section */
+#watch-discussion.branded-page-box.yt-card.scrolldetect {
+    background-color: #2B2B2B !important;
+}
+#watch-header, #watch-header * {
+    background-color: #2B2B2B !important;
+}
+#action-panel-details.action-panel-content.yt-uix-expander.yt-card.yt-card-has-padding {
+    background-color: #2B2B2B !important;
+}
+#watch7-user-header.spf-link , #watch7-user-header.spf-link * {
+    background-color: #2B2B2B !important;
 }

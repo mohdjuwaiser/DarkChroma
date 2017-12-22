@@ -21,15 +21,15 @@
             "css": [
                 "css/default_style.css",
                 "css/frequent_pages/google.css",
-                "css/frequent_pages/youtube.css",
-                "css/frequent_pages/wikipedia.css"
+                "css/frequent_pages/wikipedia.css",
+                "css/frequent_pages/youtube.css"
             ],
             "matches": [
                 "http://*/*",
                 "https://*/*"
             ],
             "exclude_globs": [
-//                "*facebook*",
+                "*amazon*",
                 "*github*",
                 "*stackoverflow*",
                 "*stackexchange*",
@@ -37,12 +37,13 @@
                 "*udemy*",
                 "*w3school*",
                 "*outlook*",
-                "*mail.google*"
+                "*mail.google*",
+                "*docs.google*"
             ],
             "js": [
                 "script/jquery-min.js",
-                "script/frequent_pages/google.js",
-                "script/frequent_pages/youtube.js",
+//                "script/frequent_pages/google.js",
+//                "script/frequent_pages/youtube.js",
                 "script/options.js"
             ]
         }

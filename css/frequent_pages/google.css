@@ -30,7 +30,7 @@ span._xdb a.fl:visited {
 
 /* "people also ask" arrow */
 ._Zgf {
-    background-color: #454545 !important;
+    background-color: transparent !important;
 }
 
 /* google apps title box, bell notification */
@@ -90,6 +90,13 @@ button.show-all::after, button.show-all svg {
 }
 
 /*********** NOT WORKING YET ***********/
+
+/* logo */
+#logo img {
+    background-image:url("/../../assets/images/replacements/google/google_logo.png") !important;
+    height: 44px !important;
+    width: 120px !important;
+}
 
 img#hplogo {
     background-image: url("http://diylogodesigns.com/blog/wp-content/uploads/2016/04/new-google-logo-png.png") !important;
