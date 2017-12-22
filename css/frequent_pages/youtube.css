@@ -1,16 +1,12 @@
-body, body * {
-    background-color: #2B2B2B !important;
-}
-
-/* search button, upload button, notification button, close notification button */
-.yt-uix-button-content, .yt-uix-button-icon.yt-uix-button-icon-material-upload.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-bell.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite {
+/* search button, upload button, notification button, close notification button, notification setting button */
+.yt-uix-button-content, .yt-uix-button-icon.yt-uix-button-icon-material-upload.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-bell.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite, .yt-uix-button-icon.yt-uix-button-icon-icon-account-settings.yt-sprite {
     background-color: transparent !important;
 }
 
 /* notification background */
-/*.yt-uix-clickcard-card-content, .yt-uix-clickcard-card-content * {*/
-    /*background-color: #121212 !important;*/
-/*}*/
+#yt-masthead-notifications-header, #yt-masthead-notifications-header *,.feed-item-container.yt-lockup.yt-lockup-tile.yt-lockup-notification.yt-uix-tile.clearfix.yt-uix-post-anchor, .feed-item-container.yt-lockup.yt-lockup-tile.yt-lockup-notification.yt-uix-tile.clearfix.yt-uix-post-anchor * {
+    background-color: #1b1b1b !important;
+}
 
 /* top bars */
 #yt-masthead-container.clearfix.yt-base-gutter, #appbar-nav.appbar-content-hidable {
@@ -29,7 +25,7 @@ body, body * {
 }
 
 /* side bar under hamburger icon */
-#appbar-guide-menu, .guide-toplevel, .guide-toplevel * {
+#appbar-guide-menu, .guide-toplevel, .guide-toplevel *, #guide-container, #guide-container * {
     background-color: #2B2B2B !important;
 }
 
@@ -41,6 +37,8 @@ body, body * {
 /* video group background */
 .feed-item-container.browse-list-item-container.yt-section-hover-container.compact-shelf.shelf-item.branded-page-box.clearfix:hover {
     background-color: #2B2B2B !important;
+    border-color: white !important;
+    border-bottom: solid !important;
 }
 
 /* video title background */
@@ -88,7 +86,7 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
     background-color: #3e3e3e !important;
 }
 
-/* accounts drop down buttons not working */
+/* accounts drop down buttons */
 .yt-uix-button-content, .yt-uix-button-content * {
     background: transparent !important;
 }
@@ -104,5 +102,10 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
     background-color: #2B2B2B !important;
 }
 #watch7-user-header.spf-link , #watch7-user-header.spf-link * {
+    background-color: #2B2B2B !important;
+}
+
+/* creator page */
+#creator-page, #creator-page * {
     background-color: #2B2B2B !important;
 }

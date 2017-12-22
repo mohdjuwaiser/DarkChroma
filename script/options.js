@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     var sitesAsString = "abc";
     console.log(sitesAsString);
 
@@ -9,8 +9,8 @@ $(function () {
 
     // excludeInput is empty?
 
-    var sites = getArrayOfSites("google, youtube");
-    updatePageStyle(sites)
+    var sites = getArrayOfSites("google, wikipedia, facebook");
+    updatePageStyle(sites);
 
     $("#updateExcludeButton").click(function () {
         var list = $('#excludeInput').val();
@@ -41,12 +41,20 @@ function getArrayOfSites(sites) {
  */
 function updatePageStyle(excludedSites) {
     var url = window.location.href;
-    for(var site in excludedSites) {
-        if(url.contains(site)) {
-            alert("match");
+    var isMatched = false;
+
+    for(var i = 0; i < excludedSites.length; i++) {
+        if(url.indexOf(excludedSites[i]) >= 0) {
+            // alert("match");
+            isMatched = true;
+
+            chrome.tabs.insertCSS();
+
+            break;
         }
-        else {
-            alert("not match");
-        }
+    }
+
+    if(!isMatched) {
+        // alert("not match");
     }
 }

@@ -12,47 +12,44 @@
     },
     "browser_action": {
         "default_title": "DarkChroma",
-        "default_icon": "assets/images/logo/png/DarkChroma16.png",
-        "default_popup": "html/popup.html"
+        "default_icon": "assets/images/logo/png/DarkChroma16.png"
     },
     "options_page": "html/option.html",
     "content_scripts": [
         {
             "css": [
                 "css/default_style.css",
+//                "css/frequent_pages/facebook.css",
                 "css/frequent_pages/google.css",
-                "css/frequent_pages/wikipedia.css",
-                "css/frequent_pages/youtube.css"
+                "css/frequent_pages/wikipedia.css"
+//                "css/frequent_pages/youtube.css"
             ],
             "matches": [
-                "http://*/*",
-                "https://*/*"
+                "*://www.google.com/*",
+                "*://*.wikipedia.org/*"
             ],
-            "exclude_globs": [
-                "*amazon*",
-                "*github*",
-                "*stackoverflow*",
-                "*stackexchange*",
-                "*bootstrap*",
-                "*udemy*",
-                "*w3school*",
-                "*outlook*",
-                "*mail.google*",
-                "*docs.google*"
-            ],
+//            "exclude_globs": [
+//                "*youtube*",
+//                "*facebook*",
+//                "*amazon*",
+//                "*github*",
+//                "*stackoverflow*",
+//                "*stackexchange*",
+//                "*bootstrap*",
+//                "*udemy*",
+//                "*w3school*",
+//                "*outlook*",
+//                "*mail.google*"
+//            ],
             "js": [
                 "script/jquery-min.js",
-//                "script/frequent_pages/google.js",
-//                "script/frequent_pages/youtube.js",
                 "script/options.js"
+//                "script/all.js"
             ]
         }
     ],
     "permissions": [
-        "storage"
-    ],
-    "web_accessible_resources": [
-        "css/default_style.css",
-        "css/customized_style.css"
+        "storage",
+        "tabs"
     ]
 }
