@@ -5,6 +5,17 @@ div[role=alertdialog], div[role=alertdialog] div {
 
 /*********** GOOGLE ***********/
 
+/* google search */
+#tsf > div.tsf-p > div.jsb > center > input[type="submit"] {
+    color: #2B2B2B !important;
+}
+
+/* "i'm feeling lucky" */
+.gbqfba.gbqfba-hvr, .gbqfba.gbqfba-hvr *, .gbqfba.gbqfba-hvr * * {
+    color: #2B2B2B !important;
+    background-color: #f1f1f1 !important;
+}
+
 span._xdb a.fl {
     color: #81b8ed !important;
 }
@@ -14,14 +25,16 @@ span._xdb a.fl:visited {
 }
 
 /* search bar */
-.sbibtd, .sbibtd * {
+.gstl_0.sbib_a, .gstl_0.sbib_a *, #sfdiv, #_fZl, #_fZl * {
     background-color: #454545 !important;
 }
 
 /* google search list drop-down */
 .sbdd_b, .sbdd_b * {
     background-color: #393939 !important;
+    z-index: -1 !important;
 }
+
 
 /* google search list drop-down on select */
 .sbsb_c.gsfs.sbsb_d, .sbsb_c.gsfs.sbsb_d * {
@@ -58,6 +71,17 @@ cite._Rm {
     color: darkgreen !important;
 }
 
+/* google translate box */
+#tw-container.vk_c, #tw-container.vk_c * {
+    background-color: #454545 !important;
+}
+.tw-bilingual-pos.vk_dgy {
+    color: white !important;
+}
+#tw-ob > div.tw-swapa > div {
+    background-color: white !important;
+}
+
 /*********** GOOGLE SUPPORT ***********/
 
 /* google apps */
@@ -91,18 +115,15 @@ button.show-all::after, button.show-all svg {
 
 /*********** NOT WORKING YET ***********/
 
+/*!* search bar on home page *!*/
+/*.lst-c, .lst-c * {*/
+    /*background-color: #393939 !important;*/
+/*}*/
+
 /* logo */
-#logo img {
-    background-image:url("/../../assets/images/replacements/google/google_logo.png") !important;
-    height: 44px !important;
-    width: 120px !important;
-}
-
-img#hplogo {
-    background-image: url("http://diylogodesigns.com/blog/wp-content/uploads/2016/04/new-google-logo-png.png") !important;
-}
-
-/* "i'm feeling lucky" */
-.jsb center input[type=submit] {
-    background-color: #454545 !important;
+#hplogo {
+    background: url("../../assets/images/replacements/google/google_logo.png") !important;
+    width: 272px !important;
+    height: 92px !important;
+    display: block !important;
 }
