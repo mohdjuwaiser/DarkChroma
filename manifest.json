@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "DarkChroma",
-    "version": "1.0",
+    "name": "Dark Chroma",
+    "version": "1.0.1",
     "description": "Provide dark background with light text for Chrome",
     "homepage_url": "https://github.com/baonguyen96/DarkChroma",
     "offline_enabled": true,
@@ -19,32 +19,16 @@
         {
             "css": [
                 "css/default_style.css",
-//                "css/frequent_pages/facebook.css",
                 "css/frequent_pages/google.css",
                 "css/frequent_pages/wikipedia.css"
-//                "css/frequent_pages/youtube.css"
             ],
             "matches": [
                 "*://www.google.com/*",
                 "*://*.wikipedia.org/*"
             ],
-//            "exclude_globs": [
-//                "*youtube*",
-//                "*facebook*",
-//                "*amazon*",
-//                "*github*",
-//                "*stackoverflow*",
-//                "*stackexchange*",
-//                "*bootstrap*",
-//                "*udemy*",
-//                "*w3school*",
-//                "*outlook*",
-//                "*mail.google*"
-//            ],
             "js": [
                 "script/jquery-min.js",
                 "script/options.js"
-//                "script/all.js"
             ]
         }
     ],
