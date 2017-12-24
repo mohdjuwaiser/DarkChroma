@@ -11,21 +11,26 @@
         "16": "assets/images/logo/png/DarkChroma16.png"
     },
     "browser_action": {
-        "default_title": "DarkChroma",
+        "default_title": "Dark Chroma",
         "default_icon": "assets/images/logo/png/DarkChroma16.png"
     },
-    "options_page": "html/option.html",
     "content_scripts": [
         {
             "css": [
                 "css/default_style.css",
-                "css/frequent_pages/google.css","css/frequent_pages/youtube.css",
-                "css/frequent_pages/wikipedia.css"
+                "css/optimized/google.css",
+                "css/optimized/wikipedia.css",
+                "css/optimized/youtube.css"
             ],
             "matches": [
                 "*://www.google.com/*",
+                "*://support.google.com/*",
+                "*://scholar.google.com/*",
                 "*://*.wikipedia.org/*",
-                "*://*.youtube.com/*"
+                "*://www.youtube.com/*"
+            ],
+            "exclude_globs": [
+                "*://www.google.com/maps/*"
             ],
             "js": [
                 "script/jquery-min.js",

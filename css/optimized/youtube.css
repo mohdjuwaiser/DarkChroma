@@ -1,14 +1,18 @@
 /****** youtube home page ******/
 
+body, body * {
+    background-color: transparent !important;
+}
+
 /* top bars */
-#yt-masthead-container.clearfix.yt-base-gutter, #appbar-nav.appbar-content-hidable {
-    background-color: #2B2B2B !important;
+#masthead, #masthead > #container, #masthead > #container *, #masthead > #container > #end, #masthead > #container > #end * {
+    background-color: #454545 !important;
     opacity: unset !important;
 }
 
 /* search bar */
-#masthead-search-term, #masthead-search-term *, #search-btn, #search-btn * {
-    background-color: #393939 !important;
+#container, #container *, #search-icon-legacy, #search-icon-legacy * {
+    background-color: #454545 !important;
 }
 
 /* search result drop down */
@@ -22,20 +26,23 @@
 }
 
 /* main page*/
-#page * {
-    background-color: #393939 !important;
-}
-
-/* side bar under hamburger icon*/
-#guide-container, #guide-container * {
+#page-manager > ytd-browse, #masthead-ad, #masthead-ad * {
     background-color: #2B2B2B !important;
 }
 
+/* side bar under hamburger icon*/
+#guide-content, #guide-content * {
+    background-color: #454545 !important;
+}
+
 /* side bar under hamburger icon on select */
-#guide-container > div > ul > li > div > ul > li:hover *,               /* top */
-#guide-container > div > ul > li > div > ul > div > div > li:hover *,   /* library */
-#guide-channels > li:hover * {                                          /* subscriptions */
+#sections > ytd-guide-section-renderer > #items > ytd-guide-entry-renderer:hover * {
     background-color: #121212 !important;
+}
+
+/* extra area when open the hamburger side menu */
+#content, #content *, #scrim, #scrim * {
+    background-color: transparent !important;
 }
 
 /* title and channel text */
@@ -48,42 +55,53 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
     color: #b4b7ff !important;
 }
 
-/* video direct link */
-.yt-uix-redirect-link, .yt-uix-redirect-link * {
-    color: darkgreen !important;
+/* subscribe button */
+#subscribe-button > ytd-subscribe-button-renderer > paper-button > yt-formatted-string,
+#subscribe-button > ytd-subscribe-button-renderer > paper-button > yt-formatted-string > span {
+    background-color: transparent !important;
+    color: white !important;
 }
 
-/* playlist thumbnail */
-/*a.yt-pl-thumb-link.yt-uix-sessionlink.spf-link > div.sidebar *, a.yt-pl-thumb-link.yt-uix-sessionlink.spf-link > div.yt-pl-thumb-overlay * {*/
-    /*background-color: #2B2B2B !important;*/
-/*}*/
-
-
-/* accounts drop down */
+/* accounts drop down (not working yet) */
 .yt-masthead-account-picker-option.yt-masthead-account-picker-user-option, .yt-masthead-account-picker.yt-uix-clickcard-card-content, .yt-masthead-account-picker.yt-uix-clickcard-card-content * {
     background-color: #2B2B2B !important;
 }
 
-/* accounts drop down on select */
+/* accounts drop down on select (not working yet) */
 #yt-masthead-multilogin > a:hover, #yt-masthead-multilogin > a:hover * {
     background-color: #121212 !important;
 }
 
-/* notification hover */
+/* notification hover (not tested yet) */
 #yt-masthead-notifications-content > ol > li:hover * {
     background-color: #121212 !important;
 }
 
 /****** youtube video page ******/
 
-/* comment box */
-#comment-simplebox > div.comment-simplebox-frame, #comment-simplebox > div.comment-simplebox-frame * {
+/* comment wrapper*/
+/*#main {*/
+    /*background-color: #393939 !important;*/
+/*}*/
+
+/* comment input */
+#placeholder-area, #placeholder-area *, #textarea, #textarea * {
     background-color: #454545 !important;
 }
 
 /* comment body */
 #watch7-main, #watch7-main * {
     background-color: #2B2B2B !important;
+}
+
+#related, #related * {
+    background-color: #2B2B2B !important;
+}
+
+/* cancel/comment button */
+#buttons > *, #buttons > * > * {
+    background-color: #454545 !important;
+    color: white !important;
 }
 
 /****** youtube channel ******/
@@ -101,12 +119,4 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
 /* related channel enable/disable button */
 #related-channels-sidebar > div > form > div > div > button, #related-channels-sidebar > div > form > div > div > button > * {
     background-color: #454545 !important;
-}
-
-
-/* NOT WORKING YET */
-
-/* playlist next/prev buttons */
-.compact-shelf.yt-uix-shelfslider > button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-shelf-slider-pager.yt-uix-shelfslider-next > *, .compact-shelf.yt-uix-shelfslider > button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-shelf-slider-pager.yt-uix-shelfslider-prev > * {
-    background-color: #9c9c9c !important;
 }

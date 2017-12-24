@@ -1,2 +1,5 @@
 v1.0.1
 Optimize for Google search and  Wikipedia.
+
+v1.1.0
+Update Google UI, support Google Support,

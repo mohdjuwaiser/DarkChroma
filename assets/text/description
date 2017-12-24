@@ -2,4 +2,9 @@ A lot of extensions that change Chrome to dark theme use simple invert function 
 
 Support most websites with beautiful dark theme.
 
-Optimized for Google, Google Support, [Youtube], Wikipedia. All other websites, depends on their design, may have some transparent element on top of each other. I am trying my best to optimize as many websites as possible, but it is impossible to fit all sites.
+Optimized for Google, Google Support, Wikipedia. All other websites, depends on their design, may have some transparent element on top of each other. I am trying my best to optimize as many websites as possible, but it is impossible to fit all sites.
+
+NOTE: YouTube now has its own dark theme. User can turn it on via YouTube setting.
+
+-------------------------
+
