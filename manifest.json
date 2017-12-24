@@ -19,12 +19,13 @@
         {
             "css": [
                 "css/default_style.css",
-                "css/frequent_pages/google.css",
+                "css/frequent_pages/google.css","css/frequent_pages/youtube.css",
                 "css/frequent_pages/wikipedia.css"
             ],
             "matches": [
                 "*://www.google.com/*",
-                "*://*.wikipedia.org/*"
+                "*://*.wikipedia.org/*",
+                "*://*.youtube.com/*"
             ],
             "js": [
                 "script/jquery-min.js",

@@ -21,7 +21,7 @@ span._xdb a.fl {
 }
 
 span._xdb a.fl:visited {
-    color: #2345c4 !important;
+    color: #b4b7ff !important;
 }
 
 /* search bar */
@@ -82,6 +82,11 @@ cite._Rm {
     background-color: white !important;
 }
 
+/*!* top result box *!*/
+/*#rso > div:nth-child(1) > div > div.kp-blk._Z7._Rqb._RJe > div > div._OKe > div:nth-child(2), #rso > div:nth-child(1) > div > div.kp-blk._Z7._Rqb._RJe > div > div._OKe > div:nth-child(2) *, #rso > div:nth-child(1) > div > div.kp-blk._Z7._Rqb._RJe > div > div._OKe > div:nth-child(2) * * {*/
+    /*background-color: #393939 !important;*/
+/*}*/
+
 /*********** GOOGLE SUPPORT ***********/
 
 /* google apps */
@@ -113,17 +118,26 @@ button.show-all::after, button.show-all svg {
     background-color: #2B2B2B !important;
 }
 
-/*********** NOT WORKING YET ***********/
+/* youtube iframe */
+#rso > div:nth-child(2) > div > div.kp-blk._kTi._Rqb._RJe > div > div._OKe > div:nth-child(2) > div.kp-header > div > div > div > div > div._ELb > a > span {
+    background-color: transparent !important;
+}
 
-/*!* search bar on home page *!*/
-/*.lst-c, .lst-c * {*/
-    /*background-color: #393939 !important;*/
-/*}*/
+/* dictionary iframe */
+#dw-siw > input, .dw-sb-btn, .dw-sb-btn * {
+    background-color: #454545 !important;
+}
 
-/* logo */
-#hplogo {
-    background: url("../../assets/images/replacements/google/google_logo.png") !important;
-    width: 272px !important;
-    height: 92px !important;
-    display: block !important;
+/* "showtimes at" */
+.vk_bk.lr_c_h {
+    color: white !important;
+}
+
+/* movie's title */
+.lr_c_fcb > .lr_c_tmt > a {
+    color: #81b8ed !important;
+}
+
+.lr_c_fcb > .lr_c_tmt > a:visited {
+    color: #b4b7ff !important;
 }

@@ -1,1 +1,2 @@
+v1.0.1
 Optimize for Google search and  Wikipedia.
