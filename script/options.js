@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    var sitesAsString = "abc";
-    console.log(sitesAsString);
+    var sitesAsString = "";
 
     chrome.storage.sync.get("newList", function (list) {
         $("#excludeInput").val(list.newList);
@@ -9,7 +8,7 @@ $(document).ready(function () {
 
     // excludeInput is empty?
 
-    var sites = getArrayOfSites("google, wikipedia, facebook");
+    var sites = getArrayOfSites($("#excludeInput").val());
     updatePageStyle(sites);
 
     $("#updateExcludeButton").click(function () {
@@ -43,9 +42,14 @@ function updatePageStyle(excludedSites) {
     var url = window.location.href;
     var isMatched = false;
 
+    if(excludedSites == null || excludedSites.length <= 0) {
+        alert(excludedSites);
+        return;
+    }
+
     for(var i = 0; i < excludedSites.length; i++) {
         if(url.indexOf(excludedSites[i]) >= 0) {
-            // alert("match");
+            alert("match");
             isMatched = true;
 
             chrome.tabs.insertCSS();
@@ -55,6 +59,6 @@ function updatePageStyle(excludedSites) {
     }
 
     if(!isMatched) {
-        // alert("not match");
+        alert("not match");
     }
 }

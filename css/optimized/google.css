@@ -129,6 +129,18 @@ button.ab_button > span > img {
     filter: invert(100%);
 }
 
+/* accounts drop down */
+#gbw > div > div > div.gb_Ac.gb_Dg.gb_R > div.gb_hb.gb_5c.gb_Dg.gb_R.gb_g > div.gb_rb.gb_fa.gb_g,
+#gbw > div > div > div.gb_Ac.gb_Dg.gb_R > div.gb_hb.gb_5c.gb_Dg.gb_R.gb_g > div.gb_rb.gb_fa.gb_g * {
+    background-color: #393939 !important;
+}
+
+/* accounts drop down hover */
+#gbw > div > div > div.gb_Ac.gb_Dg.gb_R > div.gb_hb.gb_5c.gb_Dg.gb_R.gb_g > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover,
+#gbw > div > div > div.gb_Ac.gb_Dg.gb_R > div.gb_hb.gb_5c.gb_Dg.gb_R.gb_g > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover *{
+    background-color: #121212 !important;
+}
+
 /* zoom button on top right of map */
 div.gws-local-map__map-expando.duf-h {
     background-color: transparent !important;
@@ -142,13 +154,48 @@ div.gws-local-map__map-expando.duf-h {
 }
 
 /* search bar */
-#search-form > * {
+#search-form, #search-form > div > input, #search-form > button.gb_cf.gb_ef, #search-form > button.gb_cf.gb_ef *, #search-form > button.gb_1e, #search-form > button.gb_1e * {
     background-color: #454545 !important;
 }
 
 /* search result drop down on select */
 .sbsb_c.sbsb_d, .sbsb_c.sbsb_d * {
     background-color: #121212 !important;
+}
+
+/* side bar */
+#sc-burger-top > li:hover *{
+    background-color: #121212 !important;
+}
+
+/* expand button */
+body > div.hcfe > div.hcfe-content > section > div > article > div > button > svg {
+    background-color: transparent !important;
+}
+
+/* accounts drop down */
+#gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g, #gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g * {
+    background-color: #393939 !important;
+}
+
+/* accounts drop down on select */
+#gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover, #gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover *{
+    background-color: #121212 !important;
+}
+
+/* "was this article helpful?" answer buttons */
+div.button-group > button.as-button {
+    background-color: #454545 !important;
+}
+
+/* next/previous article */
+div.guide-button-container > a.guide-button, div.guide-button-container > a.guide-button * {
+    background-color: #454545 !important;
+}
+
+/* "to receive customized help..." */
+div.info-bar-container > div.notification, div.info-bar-container > div.notification * {
+    background-color: #454545 !important;
 }
 
 /*********** GOOGLE SCHOLARS ***********/
@@ -158,9 +205,9 @@ div.gws-local-map__map-expando.duf-h {
     background-color: #454545 !important;
 }
 
-/* search button (color is not correct) */
+/* search button */
 #gs_hdr_tsb > span, #gs_hdr_tsb > span > * {
-    background-color: #3F79F4 !important;
+    background-color: #4185F3 !important;
 }
 
 /* result drop down */

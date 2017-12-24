@@ -23,13 +23,13 @@
                 "css/optimized/wikipedia.css"
             ],
             "matches": [
-                "*://www.google.com/*",
-                "*://support.google.com/*",
-                "*://*.wikipedia.org/*"
+                "*://*/*",
+                "https://scholar.google.com/*"
             ],
             "exclude_globs": [
                 "*://www.google.com/maps/*",
-                "*://*youtube*"
+                "*://*youtube*",
+                "*://*.google*"
             ],
             "js": [
                 "script/jquery-min.js",

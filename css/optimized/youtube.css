@@ -6,14 +6,14 @@ body, body * {
 
 /* top bars */
 #masthead, #masthead > #container, #masthead > #container *, #masthead > #container > #end, #masthead > #container > #end * {
-    background-color: #454545 !important;
+    background-color: #121212 !important;
     opacity: unset !important;
 }
 
 /* search bar */
-#container, #container *, #search-icon-legacy, #search-icon-legacy * {
-    background-color: #454545 !important;
-}
+/*#search-form, #search-form > div, #search-form > div *, #search-icon-legacy, #search-icon-legacy > * {*/
+    /*background-color: #454545 !important;*/
+/*}*/
 
 /* search result drop down */
 .gssb_e {
@@ -30,8 +30,13 @@ body, body * {
     background-color: #2B2B2B !important;
 }
 
+/*#guide-icon {*/
+    /*position: fixed !important;*/
+    /*!*z-index: -1 !important;*!*/
+/*}*/
+
 /* side bar under hamburger icon*/
-#guide-content, #guide-content * {
+#guide-inner-content, #guide-inner-content * {
     background-color: #454545 !important;
 }
 
@@ -63,7 +68,8 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
 }
 
 /* accounts drop down (not working yet) */
-.yt-masthead-account-picker-option.yt-masthead-account-picker-user-option, .yt-masthead-account-picker.yt-uix-clickcard-card-content, .yt-masthead-account-picker.yt-uix-clickcard-card-content * {
+#sections.style-scope.ytd-multi-page-menu-renderer > yt-multi-page-menu-section-renderer > #items,
+#sections.style-scope.ytd-multi-page-menu-renderer > yt-multi-page-menu-section-renderer > #items *{
     background-color: #2B2B2B !important;
 }
 
@@ -102,6 +108,27 @@ a.yt-ui-ellipsis.yt-ui-ellipsis-2.yt-uix-sessionlink.spf-link:visited, a.yt-uix-
 #buttons > *, #buttons > * > * {
     background-color: #454545 !important;
     color: white !important;
+}
+
+/* report/ open transcript/ add translation */
+#contentWrapper > ytd-menu-popup-renderer > #items * {
+    background-color: #2B2B2B !important;
+}
+
+/* report/ open transcript/ add translation on select */
+#contentWrapper > ytd-menu-popup-renderer > #items > div > *:hover *,
+#contentWrapper > ytd-menu-popup-renderer > #items > div > * *:hover *{
+    background-color: #454545 !important;
+}
+
+/* autoplay button */
+#toggleBar, #toggleButton, #toggleButton * {
+    background-color: #454545 !important;
+}
+
+/* share menu */
+#contentWrapper > yt-sharing-renderer, #contentWrapper > yt-sharing-renderer * {
+    background-color: #454545 !important;
 }
 
 /****** youtube channel ******/
