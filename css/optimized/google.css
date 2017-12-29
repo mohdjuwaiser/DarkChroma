@@ -3,7 +3,7 @@ div[role=alertdialog], div[role=alertdialog] div {
     background-color: white !important;
 }
 
-/*********** GOOGLE ***********/
+/*********** ALL ***********/
 
 /* google search */
 #tsf > div.tsf-p > div.jsb > center > input[type="submit"] {
@@ -146,93 +146,31 @@ div.gws-local-map__map-expando.duf-h {
     background-color: transparent !important;
 }
 
-/*********** GOOGLE SUPPORT ***********/
-
-/* google apps */
-.gb_ga.gb_fa.gb_za.gb_g.gb_ha, .gb_ga.gb_fa.gb_za.gb_g.gb_ha * {
-    background-color: #393939 !important;
-}
-
-/* search bar */
-#search-form, #search-form > div > input, #search-form > button.gb_cf.gb_ef, #search-form > button.gb_cf.gb_ef *, #search-form > button.gb_1e, #search-form > button.gb_1e * {
+/* products ads on the right */
+#rhs_block > div.cu-container, #rhs_block > div.cu-container * {
     background-color: #454545 !important;
 }
 
-/* search result drop down on select */
-.sbsb_c.sbsb_d, .sbsb_c.sbsb_d * {
-    background-color: #121212 !important;
-}
-
-/* side bar */
-#sc-burger-top > li:hover *{
-    background-color: #121212 !important;
-}
-
-/* expand button */
-body > div.hcfe > div.hcfe-content > section > div > article > div > button > svg {
+/* title of products ads on the right */
+div.jackpot-title-ratings-container.rhsl4 * {
     background-color: transparent !important;
 }
 
-/* accounts drop down */
-#gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g, #gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g * {
-    background-color: #393939 !important;
+/* radio buttons */
+._zss {
+    color: white !important;
 }
 
-/* accounts drop down on select */
-#gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover, #gb > div.gb_Bd.gb_7d > div.gb_rb.gb_fa.gb_g > div.gb_Jb > div > *:hover *{
-    background-color: #121212 !important;
-}
+/*********** SHOPPING ***********/
 
-/* "was this article helpful?" answer buttons */
-div.button-group > button.as-button {
+/* product's div */
+div.sh-dgr__grid-result, div.sh-dgr__grid-result *,
+div.sh-pr__product-results, div.sh-pr__product-results *,
+div.mnr-c.pla-unit, div.mnr-c.pla-unit * {
     background-color: #454545 !important;
 }
 
-/* next/previous article */
-div.guide-button-container > a.guide-button, div.guide-button-container > a.guide-button * {
-    background-color: #454545 !important;
-}
-
-/* "to receive customized help..." */
-div.info-bar-container > div.notification, div.info-bar-container > div.notification * {
-    background-color: #454545 !important;
-}
-
-/*********** GOOGLE SCHOLARS ***********/
-
-/* search bar */
-#gs_hdr_tsi {
-    background-color: #454545 !important;
-}
-
-/* search button */
-#gs_hdr_tsb > span, #gs_hdr_tsb > span > * {
-    background-color: #4185F3 !important;
-}
-
-/* result drop down */
-#gs_hdr_frm_ac > div > ul, #gs_hdr_frm_ac > div > ul > li {
-    background-color: #393939 !important;
-}
-
-#gs_hdr_frm_ac > div > ul > li > b {
+/* next/previous product arrow button */
+#uid_IBxDWsuRFcaojwSitKGYCg_0 > * > g-fab._jAg_uqh {
     background-color: transparent !important;
-}
-
-/* result drop down on select */
-#gs_hdr_frm_ac > div > ul > li.gs_sel {
-    background-color: #121212 !important;
-}
-
-/* article check box left side */
-span.gs_cb_wr > span.gs_chk, span.gs_cb_wr > span.gs_cbx, #gs_bdy_sb_ca > span.gs_ico {
-    background-color: white !important;
-}
-
-#gs_amr-b > span, #gs_amr-bl, #gs_alerts_buttons > button:nth-child(1) > span, #gs_alerts_buttons > button:nth-child(1) > span > span, #gs_alerts_buttons > button.gs_btn_cre.gs_btn_lsb.gs_btn_lsu > span, #gs_alerts_buttons > button.gs_btn_cre.gs_btn_lsb.gs_btn_lsu > span > span {
-    background-color: transparent !important;
-}
-
-#gs_amr-bl, #gs_alerts_buttons > button:nth-child(1) > span, #gs_alerts_buttons > button.gs_btn_cre.gs_btn_lsb.gs_btn_lsu > span, #gs_alerts_buttons > button:nth-child(1) > span > span, #gs_alerts_buttons > button.gs_btn_cre.gs_btn_lsb.gs_btn_lsu > span > span {
-    color: black !important;
 }
